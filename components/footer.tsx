@@ -14,13 +14,13 @@ const Footer = () => {
         </span>
       </div>
       <div className="flex items-center justify-center gap-4">
-        <Link href="https://ryanfurrer.com" externalLink>
+        <Link href="https://github.com/ryandotfurrer" externalLink>
           GitHub
         </Link>
-        <Link href="https://ryanfurrer.com" externalLink>
+        <Link href="https://x.com/ryandotfurrer" externalLink>
           Twitter (X)
         </Link>
-        <Link href="https://ryanfurrer.com" externalLink>
+        <Link href="https://www.linkedin.com/in/ryanfurrer/" externalLink>
           LinkedIn
         </Link>
       </div>

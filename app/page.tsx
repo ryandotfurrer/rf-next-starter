@@ -26,15 +26,26 @@ export default function Home() {
           While largely unopinionated, there are a few things I've
           included/changed which you may want to opt out of.
         </p>
-        <Button asChild>
-          <Link
-            href="https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer"
-            externalLink
-            className="hover:no-underline"
-          >
-            Get started with this template
-          </Link>
-        </Button>
+        <div className="flex flex-col gap-4 md:max-w-fit md:flex-row">
+          <Button asChild>
+            <Link
+              href="https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer"
+              externalLink
+              className="hover:no-underline"
+            >
+              Get started using this template
+            </Link>
+          </Button>
+          <Button asChild variant={"secondary"}>
+            <Link
+              href="https://github.com/ryandotfurrer/rf-next-starter"
+              externalLink
+              className="hover:no-underline"
+            >
+              View the GitHub repo
+            </Link>
+          </Button>
+        </div>
 
         <nav className="bg-card space-y-4 rounded-lg border p-4 shadow">
           <h2 className="text-lg">Table of Contents</h2>
@@ -216,7 +227,7 @@ export default function Home() {
             externalLink
             className="hover:no-underline"
           >
-            Get started with this template
+            Get started using this template
           </Link>
         </Button>
       </article>

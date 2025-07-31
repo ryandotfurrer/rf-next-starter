@@ -4,12 +4,11 @@ This starter serves as a minimal template for kicking off my Next.js projects. I
 
 While largely unopinionated, there are a few things I've included or changed that you may want to opt out of.
 
-[Get started with this template](https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer)
-
----
+[Get started using this template](https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer)
 
 ## Table of Contents
 
+- [Getting Started](#getting-started)
 - [Base Styles](#base-styles)
 - [Components](#components)
   - [Navbar](#navbar)
@@ -17,7 +16,56 @@ While largely unopinionated, there are a few things I've included or changed tha
   - [Link](#link)
   - [shadcn/ui](#shadcnui)
 
----
+## Getting Started
+
+### Using This Template
+
+You can create a new repository using this template by clicking the link below:
+
+[Get started using this template](https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer)
+
+Alternatively, you can clone this repository directly:
+
+```bash
+git clone https://github.com/ryandotfurrer/rf-next-starter.git your-project-name
+cd your-project-name
+```
+
+### Installing Dependencies
+
+This project uses [pnpm](https://pnpm.io/) as the package manager. Install the dependencies with:
+
+```bash
+pnpm install
+```
+
+If you prefer to use npm, yarn, or bun:
+
+```bash
+npm install
+# or
+yarn install
+# or
+bun install
+```
+
+### Running the Development Server
+
+Start the development server:
+
+```bash
+pnpm dev
+# or
+npm run dev
+# or
+yarn dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 ## Base Styles
 
@@ -58,8 +106,6 @@ You can delete the `.inline-code` class—it's only used for this homepage.
 
 If you're unsure what these classes do, check out [Tailwind's documentation](https://tailwindcss.com/docs/installation/using-vite).
 
----
-
 ## Components
 
 Again, while largely unopinionated, there are a few things I've included or changed which you may want to adjust based on your preferences.
@@ -98,4 +144,4 @@ These are the minimum needed to make the mode toggle function.
 
 If you're unsure how these work, [read shadcn/ui's docs on Dark mode](https://ui.shadcn.com/docs/dark-mode/next).
 
-[Get started with this template](https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer)
+[Get started using this template](https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer)
