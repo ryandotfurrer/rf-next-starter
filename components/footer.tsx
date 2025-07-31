@@ -1,4 +1,3 @@
-import { Button } from "./ui/button";
 import { Link } from "./ui/link";
 
 const Footer = () => {

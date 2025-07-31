@@ -38,4 +38,6 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   },
 );
 
+Link.displayName = "Link";
+
 export { Link };
