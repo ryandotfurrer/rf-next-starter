@@ -116,9 +116,26 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border/50 outline-ring/50 scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground leading-relaxed text-pretty antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply leading-none font-bold tracking-tight text-balance;
+  }
+
+  main a {
+    @apply text-blue-600 dark:text-blue-500;
+  }
+
+  .inline-code {
+    @apply bg-muted p-1 font-mono text-sm;
   }
 }

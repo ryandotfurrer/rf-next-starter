@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between pt-4 pb-8">
       <div>
-        <Link href="/">RF Template</Link>
+        <Link href="/">RF Next Starter</Link>
       </div>
       <div className="flex items-center gap-4">
         <Link href="#">Blog</Link>

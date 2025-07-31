@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to my Next.js Starter!
 
-## Getting Started
+This starter serves as a minimal template for kicking off my Next.js projects. It is powered by **Next.js**, **Tailwind CSS**, and **shadcn/ui**.
 
-First, run the development server:
+While largely unopinionated, there are a few things I've included or changed that you may want to opt out of.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[Get started with this template](https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer)
+
+---
+
+## Table of Contents
+
+- [Base Styles](#base-styles)
+- [Components](#components)
+  - [Navbar](#navbar)
+  - [Footer](#footer)
+  - [Link](#link)
+  - [shadcn/ui](#shadcnui)
+
+---
+
+## Base Styles
+
+This starter uses Tailwind's "Neutral" color palette, which you can change in the `global.css` file. Be sure to update `components.json` with whichever base color you prefer. [Learn more about shadcn/ui's Base colors](https://ui.shadcn.com/docs/theming#base-colors).
+
+All base styles are kept inside `globals.css`:
+
+```css
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground leading-relaxed text-pretty antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply leading-none font-bold tracking-tight text-balance;
+  }
+
+  main a {
+    @apply text-blue-500;
+  }
+
+  .inline-code {
+    @apply bg-muted p-1 font-mono text-sm;
+  }
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can delete the `.inline-code` class—it's only used for this homepage.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you're unsure what these classes do, check out [Tailwind's documentation](https://tailwindcss.com/docs/installation/using-vite).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Components
 
-To learn more about Next.js, take a look at the following resources:
+Again, while largely unopinionated, there are a few things I've included or changed which you may want to adjust based on your preferences.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Navbar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A basic navbar is included, with a logo on the left and links on the right. It also includes the `mode-toggle` for changing themes.
 
-## Deploy on Vercel
+**Don't want it?**
+Delete the `navbar.tsx` component inside `app > components > navbar.tsx`. Also, remove it from `layout.tsx`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Footer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The footer is a basic one with copyright text on the left and social links on the right. It's set to stick to the bottom of the page, which is the most common behavior I've seen.
+
+**Don't want it?**
+Delete the `footer.tsx` component inside `app > components > footer.tsx`. Also, remove it from `layout.tsx`.
+
+### Link
+
+I've included a custom `Link` component that extends Next.js's. You can use the `externalLink` attribute, and it will render a regular anchor tag rather than Next.js's `Link` tag. It also adds `rel="noopener noreferrer"` for external links.
+
+**Don't want this?**
+Delete `link.tsx` in `app > components > ui > link.tsx`.
+
+### shadcn/ui
+
+Minimal components from shadcn/ui are included. You can install whatever else you need. The included components are:
+
+- `button`
+- `dropdown-menu`
+- `mode-toggle`
+- `theme-provider`
+
+These are the minimum needed to make the mode toggle function.
+
+If you're unsure how these work, [read shadcn/ui's docs on Dark mode](https://ui.shadcn.com/docs/dark-mode/next).
+
+[Get started with this template](https://github.com/new?template_name=rf-next-starter&template_owner=ryandotfurrer)

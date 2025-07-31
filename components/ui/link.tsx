@@ -1,21 +1,23 @@
-import React from "react";
+import { cn } from "@/lib/utils";
 import NextLink from "next/link";
+import React from "react";
 
 interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
   externalLink?: boolean;
   children: React.ReactNode;
+  className?: string;
 }
 
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ externalLink = false, href, children, ...props }, ref) => {
+  ({ externalLink = false, href, children, className, ...props }, ref) => {
     if (externalLink) {
       return (
         <a
           ref={ref}
           href={href}
           rel="noopener noreferrer"
-          className="underline-offset-4 hover:underline"
+          className={cn("underline-offset-4 hover:underline", className)}
           {...props}
         >
           {children}
@@ -28,7 +30,7 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
         href={href}
         {...props}
         ref={ref}
-        className="underline-offset-4 hover:underline"
+        className={cn("underline-offset-4 hover:underline", className)}
       >
         {children}
       </NextLink>
